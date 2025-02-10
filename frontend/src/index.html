@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon/2798007.ico">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <a href="/" class="movie-link"><h1 class="movie">Movie</h1></a>
+            <a href="/" class="hub-link"><h1 class="hub">HUB</h1></a>
+        </div>
+        <div class="search-container fade-in">
+            <div class="searchContainer">
+                <input type="text" id="search-input" placeholder="Search for movies... " >
+            </div>
+            <i id="search-boxicon" class="search-icon bx bx-search"></i>
+        </div>
+    </header>
+
+        <div class="nav-buttons fade-in">
+            <button id="popular-movies-btn" class="nav-button active">Popular Movies</button>
+            <button id="bookmarks-btn" class="nav-button">Bookmarks</button>
+            <button id="back-btn" class="back-button" style="display: none;">⬅   Back</button>
+        </div>
+
+        <div class="resultsHeader">
+            <h2 id="results-header" class="fade-in-slide-up">🔥HOTEST MOVIES🔥</h2>
+        </div>
+        
+        <div id="movie-list" class="scale-up"></div>
+
+        <button id="load-more-button" style="display:none;">Load More</button>
+    
+    <script type="module" src="routes/router.js" defer></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
